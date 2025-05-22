@@ -1,6 +1,5 @@
 #include <iostream>
 #include "./include/Array.hpp"
-#include "./src/Array.tpp"
 
 int main()
 {
@@ -27,9 +26,9 @@ int main()
         std::cout << "\nAccessing out of bounds:" << std::endl;
         std::cout << a[100] << std::endl; // doit throw
     }
-    catch (std::exception& e) {
+    catch (const std::exception &e) {
         std::cerr << "Exception: " << e.what() << std::endl;
     }
 
-    return 0;
+    return (0);
 }

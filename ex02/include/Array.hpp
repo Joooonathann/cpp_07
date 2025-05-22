@@ -19,3 +19,5 @@ class Array
         const T         &operator[](unsigned int index) const;
         unsigned int    size(void) const;
 };
+
+#include "../src/Array.tpp"
